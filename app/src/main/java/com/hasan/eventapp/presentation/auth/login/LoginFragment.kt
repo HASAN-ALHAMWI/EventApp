@@ -49,8 +49,6 @@ class LoginFragment : Fragment() {
         initializeUi()
         observeLoginState()
 
-        // TODO: Remove debug credentials before production
-        populateDebugCredentials()
     }
 
     override fun onDestroyView() {
@@ -98,11 +96,6 @@ class LoginFragment : Fragment() {
                 if (hasFocus) passwordInputLayout.setErrorWithVisibility(null)
             }
         }
-    }
-
-    private fun populateDebugCredentials() {
-        binding.emailInput.text = SpannableStringBuilder("user1@gmail.com")
-        binding.passwordInput.text = SpannableStringBuilder("Test@123")
     }
 
     // ===========================
