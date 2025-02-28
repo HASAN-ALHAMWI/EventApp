@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginVertical="8dp"
+    app:cardCornerRadius="16dp"
+    app:cardElevation="4dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <View
+            android:id="@+id/skeletonImage"
+            android:layout_width="match_parent"
+            android:layout_height="180dp"
+            android:background="@drawable/skeleton_background"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="16dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/skeletonImage">
+
+            <View
+                android:id="@+id/skeletonTitle"
+                android:layout_width="0dp"
+                android:layout_height="24dp"
+                android:background="@drawable/skeleton_background"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintWidth_percent="0.5" />
+
+
+            <View
+                android:id="@+id/skeletonDescription1"
+                android:layout_width="0dp"
+                android:layout_height="16dp"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/skeleton_background"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/skeletonTitle" />
+
+            <View
+                android:id="@+id/skeletonDescription2"
+                android:layout_width="0dp"
+                android:layout_height="16dp"
+                android:layout_marginTop="6dp"
+                android:background="@drawable/skeleton_background"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/skeletonDescription1" />
+
+            <View
+                android:id="@+id/skeletonDivider"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="16dp"
+                android:background="@color/background_color"
+                app:layout_constraintTop_toBottomOf="@+id/skeletonDescription2" />
+
+            <View
+                android:id="@+id/skeletonPrice"
+                android:layout_width="80dp"
+                android:layout_height="20dp"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/skeleton_background"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/skeletonDivider" />
+
+            <View
+                android:id="@+id/skeletonButton"
+                android:layout_width="100dp"
+                android:layout_height="36dp"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/skeleton_background"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/skeletonDivider" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.cardview.widget.CardView>
