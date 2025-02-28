@@ -6,5 +6,21 @@
     <color name="accent_color">#00D1D1</color>
     <color name="background_color">#F5F7FA</color>
 
+    <!-- Text colors -->
+    <color name="primary_text">#102035</color>
+    <color name="secondary_text">#4A5568</color>
+    <color name="error_text">#B00020</color>
+
+    <!-- Input field colors -->
+    <color name="text_input_box_stroke">#0097A7</color>
+
+    <!-- Status colors -->
+    <color name="success_color">#00BFA5</color>
+    <color name="error_color">#FF5252</color>
+    <color name="info_color">#29B6F6</color>
+    <color name="warning_color">#FFA726</color>
+
+    <color name="card_background">#FFFFFF</color>
+    <color name="divider">#DDDDDD</color>
 
 </resources>

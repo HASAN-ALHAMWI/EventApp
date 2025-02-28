@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/loginFragment">
+
+    <fragment
+        android:id="@+id/loginFragment"
+        android:name="com.hasan.eventapp.presentation.auth.login.LoginFragment"
+        android:label="Login">
+        <action
+            android:id="@+id/action_loginFragment_to_registerFragment"
+            app:destination="@id/registerFragment" />
+        <action
+            android:id="@+id/action_loginFragment_to_eventListFragment"
+            app:destination="@id/eventListFragment"
+            app:popUpTo="@id/loginFragment"
+            app:popUpToInclusive="true" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/registerFragment"
+        android:name="com.hasan.eventapp.presentation.auth.register.RegisterFragment"
+        android:label="Register">
+        <action
+            android:id="@+id/action_registerFragment_to_eventListFragment"
+            app:destination="@id/eventListFragment"
+            app:popUpTo="@id/loginFragment"
+            app:popUpToInclusive="true" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/eventListFragment"
+        android:name="com.hasan.eventapp.presentation.events.list.EventListFragment"
+        android:label="EventListFragment">
+        <action
+            android:id="@+id/action_eventListFragment_to_eventDetailFragment"
+            app:destination="@id/eventDetailFragment" />
+
+        <action
+            android:id="@+id/action_eventListFragment_to_loginFragment"
+            app:destination="@id/loginFragment"
+            app:popUpTo="@id/nav_graph"
+            app:popUpToInclusive="true" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/eventDetailFragment"
+        android:name="com.hasan.eventapp.presentation.events.detail.EventDetailFragment"
+        android:label="EventDetailFragment">
+        <argument
+            android:name="eventId"
+            app:argType="string" />
+        <action
+            android:id="@+id/actionToPaymentBottomSheet"
+            app:destination="@id/paymentBottomSheetFragment" />
+        <action
+            android:id="@+id/action_paymentBottomSheet_to_bookingConfirmation"
+            app:destination="@id/bookingConfirmationFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/paymentBottomSheetFragment"
+        android:name="com.hasan.eventapp.presentation.payment.PaymentBottomSheetFragment"
+        android:label="Payment"
+        tools:layout="@layout/fragment_payment_bottom_sheet">
+        <argument
+            android:name="eventId"
+            app:argType="string" />
+        <argument
+            android:name="eventTitle"
+            app:argType="string" />
+        <argument
+            android:name="eventPrice"
+            app:argType="float" />
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/bookingConfirmationFragment"
+        android:name="com.hasan.eventapp.presentation.booking.BookingConfirmationFragment"
+        android:label="Booking Confirmation"
+        tools:layout="@layout/fragment_booking_confirmation" >
+        <argument
+            android:name="eventTitle"
+            app:argType="string" />
+        <argument
+            android:name="bookingReference"
+            app:argType="string" />
+        <argument
+            android:name="transactionId"
+            app:argType="string" />
+        <argument
+            android:name="amount"
+            app:argType="float" />
+        <argument
+            android:name="bookingDate"
+            app:argType="long" />
+        <action
+            android:id="@+id/action_bookingConfirmationFragment_to_eventListFragment"
+            app:destination="@id/eventListFragment"
+            app:popUpTo="@id/eventListFragment"
+            app:popUpToInclusive="true" />
+    </fragment>
+
+</navigation>

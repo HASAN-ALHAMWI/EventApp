@@ -1,0 +1,98 @@
+[
+  {
+    "id": "1",
+    "title": "Summer Concert",
+    "description": "A night of amazing music under the stars featuring local and international artists. Bring your friends and enjoy a memorable evening filled with great performances, food, and drinks.",
+    "shortDescription": "Live music event",
+    "imageUrl": "https://blog.sothebysrealty.ae/hubfs/Imported_Blog_Media/9c110e29-62b4-47a6-a993-8b36ee895770-3.jpg",
+    "date": "2024-07-15",
+    "time": "20:00",
+    "location": "Central Park",
+    "price": 49.99,
+    "availableSeats": 100
+  },
+  {
+    "id": "2",
+    "title": "Tech Conference",
+    "description": "Join industry leaders and innovators for a day of learning and networking. The conference covers the latest trends in AI, mobile development, and cloud computing with hands-on workshops.",
+    "shortDescription": "Technology and innovation summit",
+    "imageUrl": "https://d3o1wlpkmt4nt9.cloudfront.net/wp-content/uploads/2017/01/21120059/tech-conferences-5-min.jpg",
+    "date": "2024-08-10",
+    "time": "09:00",
+    "location": "Convention Center",
+    "price": 149.99,
+    "availableSeats": 200
+  },
+  {
+    "id": "3",
+    "title": "Food Festival",
+    "description": "Experience culinary delights from around the world. Over 50 vendors will showcase their signature dishes, with cooking demonstrations from celebrity chefs throughout the day.",
+    "shortDescription": "Global cuisine celebration",
+    "imageUrl": "https://www.decodedmagazine.com/wp-content/uploads/2021/07/street-feast-2.jpg",
+    "date": "2024-06-25",
+    "time": "11:00",
+    "location": "Riverside Park",
+    "price": 25.00,
+    "availableSeats": 500
+  },
+  {
+    "id": "4",
+    "title": "Art Exhibition",
+    "description": "Explore an array of contemporary and classic art from talented artists around the globe. Paintings, sculptures, and interactive installations await your presence.",
+    "shortDescription": "Art and culture showcase",
+    "imageUrl": "https://media.istockphoto.com/id/1218961153/photo/art-museum.jpg?s=612x612&w=0&k=20&c=9fK54fu1mjzFjDOSqg_jfrMy4Hkp8vsmImB7rLrbhJs=",
+    "date": "2024-09-05",
+    "time": "14:00",
+    "location": "City Art Gallery",
+    "price": 30.00,
+    "availableSeats": 150
+  },
+  {
+    "id": "5",
+    "title": "Historical Film Festival",
+    "description": "Delve into history through the lens of cinema with a selection of films from all eras. Discussions and Q&A sessions with filmmakers and historians included.",
+    "shortDescription": "Cinema and history festival",
+    "imageUrl": "https://i.ytimg.com/vi/pzgxQPGu09Q/maxresdefault.jpg",
+    "date": "2024-11-15",
+    "time": "10:00",
+    "location": "Heritage Theater",
+    "price": 40.00,
+    "availableSeats": 250
+  },
+  {
+    "id": "6",
+    "title": "Science for Kids",
+    "description": "A fun and educational day for children to learn about science through hands-on activities and experiments.",
+    "shortDescription": "Children's science event",
+    "imageUrl": "https://www.madscience.org/uploads/images/57e9382d-22be-46da-b2b0-888945af6361.jpg",
+    "date": "2025-02-10",
+    "time": "09:00",
+    "location": "Science Center",
+    "price": 15.00,
+    "availableSeats": 200
+  },
+  {
+    "id": "7",
+    "title": "Literary Workshop",
+    "description": "Join bestselling authors and aspiring writers to improve your writing skills and get feedback on your work.",
+    "shortDescription": "Writers' workshop",
+    "imageUrl": "https://hhoteldubai.com/wp-content/uploads/2024/08/literature-workshop-1170x550.webp",
+    "date": "2025-03-15",
+    "time": "13:00",
+    "location": "City Library",
+    "price": 60.00,
+    "availableSeats": 100
+  },
+  {
+    "id": "8",
+    "title": "Gaming Expo",
+    "description": "Dive into the world of gaming with the latest releases, VR experiences, and esports tournaments. Meet developers, participate in gaming challenges, and enjoy an immersive experience.",
+    "shortDescription": "Gaming and esports convention",
+    "imageUrl": "https://www.tradegroup.com/wp-content/uploads/2023/09/2019-PAX-E-Facebook-Gaming-1-1-1-1056x553.jpg",
+    "date": "2025-05-10",
+    "time": "10:00",
+    "location": "Grand Convention Hall",
+    "price": 50.00,
+    "availableSeats": 300
+  }
+]
